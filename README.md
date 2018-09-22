@@ -1,16 +1,6 @@
 # nested-planner-web
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Project Setup
+- Install and setup `aws` and `terraform` cli's beforehand
+- Change the bucket name in `package.json` under `scripts.deploy` (currently set to `nested-planner`, but obviously that one's taken)
+- Run `terraform init && terraform apply` with *your* chosen bucket name
+- On code change, run `yarn deploy`

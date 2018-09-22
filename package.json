@@ -1,11 +1,10 @@
 {
   "name": "nested-planner-web",
   "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
+  "author": "Jane Jeon",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/JaneJeon/nested-planner-web",
+  "repository": "JaneJeon/nested-planner-web",
   "dependencies": {
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
@@ -14,6 +13,11 @@
     "@vue/cli-plugin-babel": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
     "vue-template-compiler": "^2.5.17"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "deploy": "yarn build && aws s3 sync dist s3://nested-planner --delete"
   },
   "postcss": {
     "plugins": {
