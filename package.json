@@ -1,6 +1,6 @@
 {
-  "name": "nested-planner-web",
-  "version": "0.1.0",
+  "name": "vuejs-terraform-example",
+  "version": "0.1.1",
   "author": "Jane Jeon",
   "license": "Apache-2.0",
   "homepage": "https://github.com/JaneJeon/nested-planner-web",
@@ -17,7 +17,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "yarn build && aws s3 sync dist s3://nested-planner --delete"
+    "deploy": "yarn build && aws s3 sync dist s3://YOUR_SITE_HERE --delete"
   },
   "postcss": {
     "plugins": {
